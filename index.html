@@ -26,7 +26,7 @@
     }
     main {
       width: 384px;
-      height: 519px;
+      height: 528px;
       background-color: #FFFFFF;
       display: flex;
       flex-direction: column;
@@ -34,26 +34,36 @@
       border-radius: 20px;
       font-family: 'Figtree';
       box-sizing: border-box;
-      padding: 20px;     
+      padding: 20px;    
+      box-shadow: 5px 5px 0px 0px black; 
+    }
+    main:hover {
+      box-shadow: 10px 10px 0px 0px black; 
     }
     main img {
-      border-radius: 13px;
+      border-radius: 10px;
     }
     h3 {
-      width: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 4px;
       background-color: #F5D04E;
-      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
     }
     .publish-date {
-      font-size: 16px;
+      font-size: 14px;
       margin-top: 1px;
       color: black;
     }
     h1 {
       margin-top: 1px;
-      font-size: 20px;
-      font-weight: bold;
-      width: 250px;
+      font-size: 24px;
     }
     p {
       margin-top: 5px;
@@ -62,27 +72,29 @@
     }
     .author {
       display: flex;
-      gap: 15px;
-      align-items: center;
+      margin-top: 24px;
     }
     .author img {
-      width: 33px;
-      height: 100%;
+      width: 32px;
+      height: 32px;
     }
     .author p {
       color: black;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 14px;
+      margin-left: 12px;
     }
   </style>
 </head>
 <body>
   <main>
     <img src="./assets/images/illustration-article.svg">
-    <h3>Learning</h3>
-    <p class="publish-date">Published 21 Dec 2023</p>
-    <h1>HTML & CSS Foundations</h1>
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="content">
+      <h3>Learning</h3>
+      <p class="publish-date">Published 21 Dec 2023</p>
+      <h1>HTML & CSS Foundations</h1>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
     <div class="author">
       <img src="./assets/images/image-avatar.webp">
       <p>Greg Hooper</p>
