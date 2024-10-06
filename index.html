@@ -30,11 +30,12 @@
       background-color: #FFFFFF;
       display: flex;
       flex-direction: column;
-      border-style: solid;
       border-radius: 20px;
+      border: 1px solid black; /* Thin black border */
       font-family: 'Figtree';
       box-sizing: border-box;
-      padding: 20px;    
+      padding: 24px;    
+      gap: 24px;
       box-shadow: 5px 5px 0px 0px black; 
     }
     main:hover {
@@ -58,11 +59,9 @@
     }
     .publish-date {
       font-size: 14px;
-      margin-top: 1px;
       color: black;
     }
     h1 {
-      margin-top: 1px;
       font-size: 24px;
     }
     p {
@@ -72,7 +71,6 @@
     }
     .author {
       display: flex;
-      margin-top: 24px;
     }
     .author img {
       width: 32px;
@@ -88,7 +86,7 @@
 </head>
 <body>
   <main>
-    <img src="./assets/images/illustration-article.svg">
+    <img src="./assets/images/illustration-article.svg" alt="illustration-article">
     <div class="content">
       <h3>Learning</h3>
       <p class="publish-date">Published 21 Dec 2023</p>
@@ -96,7 +94,7 @@
       <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
     </div>
     <div class="author">
-      <img src="./assets/images/image-avatar.webp">
+      <img src="./assets/images/image-avatar.webp" alt="image-avatar">
       <p>Greg Hooper</p>
     </div>
   </main>
